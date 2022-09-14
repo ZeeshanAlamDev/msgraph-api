@@ -1,0 +1,372 @@
+html{
+    body{
+        font-family: 'Nunito', sans-serif;
+    }
+}
+
+body {
+    margin: 0
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    line-height: 1.5
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid #e2e8f0;
+}
+
+.bg-white {
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity))
+}
+
+.bg-gray-100 {
+    --bg-opacity: 1;
+    background-color: #7b959e4d;
+    background-color: rgba(247, 250, 252, var(--bg-opacity))
+}
+
+.border-gray-200 {
+    --border-opacity: 1;
+    border-color: #edf2f7;
+    border-color: rgba(237, 242, 247, var(--border-opacity))
+}
+
+.mt-a {
+    margin-top: auto;
+}
+
+.border-t {
+    border-top-width: 1px
+}
+
+.flex {
+    display: flex
+}
+
+.grid {
+    display: grid
+}
+
+.justify-center {
+    justify-content: center
+}
+
+.text-md {
+    font-size: .96rem
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.m-8 {
+    margin: 2rem
+}
+
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+.max-w-6xl {
+    max-width: 72rem
+}
+
+.min-h-screen {
+    min-height: 100vh
+}
+
+.overflow-hidden {
+    overflow: hidden
+}
+
+.p-6 {
+    padding: 1.5rem
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem
+}
+
+.relative {
+    position: relative
+}
+
+.shadow {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)
+}
+
+.text-gray-600 {
+    --text-opacity: 1;
+    color: #718096;
+    color: rgba(113, 128, 150, var(--text-opacity))
+}
+
+.antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr))
+}
+
+a {
+    color: #eee;
+    outline: 0;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: underline;
+}
+.disabled-btn{
+    cursor: default !important;
+    background-color: #7b959e4d !important;
+    color: #bbc1c4 !important
+}
+input {
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+input[type='submit'] {
+    cursor: pointer;
+}
+
+.form input[type='password'],
+.form input[type='text'],
+.form input[type='submit'],
+button {
+    width: 100%;
+}
+
+.form__field, .button__field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+}
+
+.red-btn{
+    background-color: #db5353db;
+}
+
+button.red-btn:focus, button.red-btn:hover{
+    background-color: #db53539e;
+}
+
+.form__input {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.api {
+    color: #eee;
+}
+
+.api input[type='submit'], .button__field a, .button__field button{
+    width: 100%;
+    font-size: .93rem;
+    color: #eeeeee;
+    cursor: pointer;
+}
+
+.api label,
+.api input[type='text'],
+.api input[type='password'],
+.api input[type='submit'], button {
+    border-radius: 0.25rem;
+    padding: 16px;
+    padding: 1rem;
+    border: 0px;
+}
+
+.api label {
+    display: flex;
+    align-items: center;
+    background-color: #839fa9;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding-left: 20px;
+    padding-left: 1.25rem;
+    padding-right: 20px;
+    padding-right: 1.25rem;
+}
+
+.api input[type='password'],
+.api input[type='text'] {
+    border: 2px solid #dbdbdb;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    color: #9ea1a4;
+}
+
+
+
+.api input[type='submit'], button {
+    background-color: #839fa9;
+    color: #eee;
+    font-weight: 700;
+}
+
+.api input[type='submit']:focus,
+.api input[type='submit']:hover,
+button:focus,
+button:hover {
+    background-color: #839fa9c2;
+}
+
+.icons {
+    display: none;
+}
+
+.icon {
+    display: inline-block;
+    fill: #ffffff;
+    font-size: 16px;
+    font-size: 1rem;
+    height: 1em;
+    vertical-align: middle;
+    width: 1em;
+}
+
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.bg-img {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+}
+
+.info{
+    margin: auto;
+    width: 100%;
+}
+
+.info > div{
+    background-color: #7b959e4d;
+    color: #2e2e2e;
+    min-width: 400px;
+    min-height: 55.5px;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+pre{
+    white-space: initial;
+}
+
+.bottom-links {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.logout {
+    color: #2e2e2e;
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+.bottom-links img {
+    height: 15px;
+    width: 15px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.grid.message{
+    border-bottom: 1px solid #dbdbdb7d;
+}
+
+@media (min-width:640px) {
+    .sm\:rounded-lg {
+        border-radius: .5rem
+    }
+
+    .sm\:items-center {
+        align-items: center
+    }
+
+    .sm\:px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem
+    }
+
+    .sm\:pt-0 {
+        padding-top: 0
+    }
+}
+
+@media (min-width:768px) {
+    .md\:border-t-0 {
+        border-top-width: 0
+    }
+
+    .md\:border-l {
+        border-left-width: 1px
+    }
+
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+}
+
+@media (min-width:1024px) {
+    .lg\:px-8 {
+        padding-left: 2rem;
+        padding-right: 2rem
+    }
+}
+
+@media (prefers-color-scheme:dark) {
+    .dark\:bg-gray-800 {
+        --bg-opacity: 1;
+        background-color: #2d3748;
+        background-color: rgba(45, 55, 72, var(--bg-opacity))
+    }
+
+    .dark\:bg-gray-900 {
+        --bg-opacity: 1;
+        background-color: #1a202c;
+        background-color: rgba(26, 32, 44, var(--bg-opacity))
+    }
+
+    .dark\:border-gray-700 {
+        --border-opacity: 1;
+        border-color: #4a5568;
+        border-color: rgba(74, 85, 104, var(--border-opacity))
+    }
+
+    .dark\:text-gray-400 {
+        --text-opacity: 1;
+        color: #cbd5e0;
+        color: rgba(203, 213, 224, var(--text-opacity))
+    }
+}
